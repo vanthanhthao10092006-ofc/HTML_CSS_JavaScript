@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo 04 - Semantic HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- header = phần đầu trang -->
+  <header>
+    <h1>UIT Tech News</h1>
+    <p>Trang tin công nghệ của sinh viên.</p>
+  </header>
+
+  <!-- nav = khu vực điều hướng -->
+  <nav aria-label="Điều hướng chính">
+    <ul>
+      <li><a href="#ai">AI</a></li>
+      <li><a href="#web">Web</a></li>
+      <li><a href="#contact">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <!-- main = nội dung chính -->
+  <main>
+    <!-- article = nội dung có thể đứng tương đối độc lập -->
+    <article>
+      <h2 id="ai">AI Agent đang thay đổi cách sinh viên học như thế nào?</h2>
+      <p><time datetime="2026-09-14">14/09/2026</time></p>
+
+      <!-- section = phần theo chủ đề bên trong article -->
+      <section>
+        <h3>Điểm quan trọng</h3>
+        <p>Semantic HTML giúp cấu trúc nội dung rõ ràng hơn.</p>
+      </section>
+    </article>
+
+    <!-- aside = nội dung phụ -->
+    <aside>
+      <h2>Đọc thêm</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+        <li><a href="https://validator.w3.org/">W3C Markup Validator</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer id="contact">
+    <p>&copy; 2026 UIT Tech News</p>
+  </footer>
+</body>
+</html>

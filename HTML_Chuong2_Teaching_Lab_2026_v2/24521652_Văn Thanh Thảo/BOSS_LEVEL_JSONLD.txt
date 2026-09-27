@@ -1,0 +1,18 @@
+Dán đoạn này trong <head> và thay nội dung theo sản phẩm của nhóm.
+Đây là BONUS, không bắt buộc cho sinh viên mới.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "StudyPilot AI",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Web",
+  "description": "AI assistant hỗ trợ sinh viên lập kế hoạch học và tạo quiz."
+}
+</script>
+
+Câu hỏi cho sinh viên:
+1. Đoạn JSON-LD này nằm trong head hay body?
+2. Người dùng có đọc nó như nội dung chính trên trang không?
+3. Vì sao dữ liệu machine-readable vẫn hữu ích?

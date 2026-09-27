@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Cheat Sheet - Chương 2</title>
+  <style>
+    *{box-sizing:border-box}body{font-family:system-ui,sans-serif;line-height:1.45;margin:0;background:#f5f7fb;color:#172033}.wrap{width:min(1100px,94%);margin:auto;padding:32px 0 60px}.hero{background:#172033;color:white;padding:26px;border-radius:18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:16px}.card{background:white;border:1px solid #d9e0ea;border-radius:14px;padding:16px;break-inside:avoid}code,pre{font-family:ui-monospace,monospace;background:#eef2f7;border-radius:6px}code{padding:1px 5px}pre{padding:12px;overflow:auto}table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid #e1e6ee;padding:7px;text-align:left}.formula{font-family:ui-monospace,monospace;font-weight:800}ul{padding-left:20px}@media print{body{background:white}.wrap{width:100%;padding:0}.hero{border-radius:0}.card{box-shadow:none}.grid{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+<main class="wrap">
+  <section class="hero">
+    <h1>HTML Cheat Sheet</h1>
+    <p class="formula">WHAT → TAG → ATTR → CHECK</p>
+    <p>HTML = nội dung + ý nghĩa + cấu trúc.</p>
+  </section>
+
+  <div class="grid">
+    <section class="card"><h2>Bộ xương</h2><pre><code>&lt;!doctype html&gt;
+&lt;html lang="vi"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;Tên trang&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;/html&gt;</code></pre></section>
+
+    <section class="card"><h2>Text</h2><table><tr><th>Nội dung</th><th>Thẻ</th></tr><tr><td>Heading</td><td><code>h1...h6</code></td></tr><tr><td>Paragraph</td><td><code>p</code></td></tr><tr><td>Quan trọng</td><td><code>strong</code></td></tr><tr><td>Nhấn ý</td><td><code>em</code></td></tr><tr><td>Code</td><td><code>code</code></td></tr></table></section>
+
+    <section class="card"><h2>List</h2><p>Không cần thứ tự → <code>ul</code>.</p><p>Có thứ tự → <code>ol</code>.</p><pre><code>&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+&lt;/ul&gt;</code></pre></section>
+
+    <section class="card"><h2>Link</h2><pre><code>&lt;a href="https://example.com"&gt;Tài liệu&lt;/a&gt;
+&lt;a href="#features"&gt;Tính năng&lt;/a&gt;
+&lt;a href="mailto:a@b.com"&gt;Email&lt;/a&gt;</code></pre><p>Link text phải nói rõ đích.</p></section>
+
+    <section class="card"><h2>Semantic map</h2><pre><code>body
+├─ header
+│  └─ nav
+├─ main
+│  ├─ section
+│  │  └─ article
+│  └─ aside
+└─ footer</code></pre></section>
+
+    <section class="card"><h2>Head / metadata</h2><pre><code>&lt;title&gt;...&lt;/title&gt;
+&lt;meta name="description" content="..."&gt;
+&lt;meta property="og:title" content="..."&gt;</code></pre><p><code>title</code> ≠ <code>h1</code>.</p></section>
+
+    <section class="card"><h2>Modern bonus</h2><p><code>figure</code> + <code>figcaption</code></p><p><code>time datetime</code></p><p><code>details</code> + <code>summary</code></p><p><code>pre</code> + <code>code</code></p></section>
+
+    <section class="card"><h2>Debug</h2><ul><li>Mở sau → đóng trước.</li><li>Kiểm tra cặp tag.</li><li>Kiểm tra quote attribute.</li><li>Kiểm tra heading order.</li><li>Validator cuối cùng.</li></ul></section>
+
+    <section class="card"><h2>5 câu cứu nguy</h2><ol><li>Nội dung này là gì?</li><li>Thứ tự có quan trọng?</li><li>Có đứng độc lập? → article.</li><li>Một phần theo chủ đề? → section.</li><li>Không có tag semantic phù hợp? → div/span.</li></ol></section>
+  </div>
+</main>
+</body>
+</html>

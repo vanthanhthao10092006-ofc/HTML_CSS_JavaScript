@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI & Robotics Day — Multimedia Lab</title>
+  <link rel="stylesheet" href="../../styles/lab.css">
+</head>
+<body>
+<header><h1>AI & Robotics Day</h1><p>Một bài mẫu tổng hợp multimedia HTML.</p></header>
+<main>
+<section class="card"><h2>1. Responsive hero</h2><img src="../../assets/images/hero-1200.jpg" srcset="../../assets/images/hero-480.jpg 480w, ../../assets/images/hero-1200.jpg 1200w" sizes="(max-width:600px) 100vw, 900px" alt="Minh hoạ phòng lab công nghệ kết nối nhiều thiết bị" width="1200" height="800"></section>
+<section class="card"><h2>2. Figure</h2><figure><img src="../../assets/images/event.jpg" alt="Sinh viên giới thiệu dự án tại sự kiện AI và Robotics" width="1000" height="667" loading="lazy"><figcaption>Hình 1. Khu trình diễn dự án của sinh viên.</figcaption></figure></section>
+<section class="card"><h2>3. Video</h2><video controls width="720" poster="../../assets/images/poster.jpg" preload="metadata"><source src="../../assets/media/demo.mp4" type="video/mp4"><track src="../../assets/captions/vi.vtt" kind="captions" srclang="vi" label="Tiếng Việt" default>Trình duyệt không hỗ trợ video.</video></section>
+<section class="card"><h2>4. Audio</h2><audio controls><source src="../../assets/media/intro.mp3" type="audio/mpeg">Trình duyệt không hỗ trợ audio.</audio></section>
+<section class="card"><h2>5. iframe</h2><iframe src="../../04_iframe_security/widget.html" title="Widget minh hoạ AI Lab" width="700" height="260" loading="lazy" sandbox></iframe></section>
+<section class="card"><h2>6. SVG</h2><svg viewBox="0 0 200 200" width="180" role="img" aria-labelledby="s-title"><title id="s-title">Biểu tượng robot tối giản</title><rect x="45" y="55" width="110" height="95" rx="18" fill="#0b57d0"/><circle cx="78" cy="95" r="10" fill="white"/><circle cx="122" cy="95" r="10" fill="white"/><path d="M75 125 H125" stroke="white" stroke-width="8" stroke-linecap="round"/></svg></section>
+<section class="card"><h2>7. Giải thích</h2><ol><li><strong>Alt:</strong> cung cấp văn bản thay thế cho ý nghĩa của ảnh.</li><li><strong>Figure:</strong> nhóm media và caption thành một đơn vị semantic.</li><li><strong>Track:</strong> cung cấp captions/subtitles bằng text track.</li><li><strong>Width/height:</strong> giúp browser biết tỉ lệ/khoảng trống trước khi ảnh tải; CSS vẫn responsive.</li><li><strong>Sandbox:</strong> hạn chế quyền nội dung iframe theo nguyên tắc least privilege.</li><li><strong>Raster/SVG:</strong> raster lưu pixel; SVG mô tả hình bằng vector/shape/path.</li><li><strong>Không lazy hero:</strong> media quan trọng ngay đầu trang thường cần tải sớm.</li></ol></section>
+</main></body></html>

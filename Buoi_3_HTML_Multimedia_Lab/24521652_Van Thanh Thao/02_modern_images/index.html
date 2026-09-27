@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>02 Modern Images</title>
+<link rel="stylesheet" href="../styles/lab.css">
+</head>
+<body>
+<header><h1>02 — Modern Images</h1><p>Hiệu năng + responsive.</p></header><main>
+<section class="card"><h2>Width + Height</h2><img src="../assets/images/hero-1200.jpg" alt="Minh hoạ HTML Multimedia Lab" width="1200" height="800"><p class="ok">Khai báo kích thước/tỉ lệ gốc giúp browser dành chỗ trước; CSS vẫn làm ảnh responsive.</p></section>
+<section class="card"><h2>Lazy loading</h2><img src="../assets/images/event.jpg" alt="Sự kiện công nghệ" width="1000" height="667" loading="lazy"><pre>&lt;img ... loading="lazy"&gt;</pre><p>Phù hợp với media ở phía dưới trang; không phải cứ có ảnh là gắn lazy.</p></section>
+<section class="card"><h2>Responsive image</h2><img src="../assets/images/hero-1200.jpg" srcset="../assets/images/hero-480.jpg 480w, ../assets/images/hero-1200.jpg 1200w" sizes="(max-width: 600px) 100vw, 900px" alt="Minh hoạ responsive image" width="1200" height="800"><pre>&lt;img
+ src="hero-1200.jpg"
+ srcset="hero-480.jpg 480w, hero-1200.jpg 1200w"
+ sizes="(max-width: 600px) 100vw, 900px"
+ alt="..."&gt;</pre><p><strong>srcset:</strong> có những file nào. <strong>sizes:</strong> ảnh sẽ chiếm bao nhiêu không gian.</p></section></main>
+</body>
+</html>

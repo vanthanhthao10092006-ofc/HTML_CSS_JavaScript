@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>05 SVG</title>
+    <link rel="stylesheet" href="../styles/lab.css" />
+  </head>
+  <body>
+    <header><h1>05 — SVG: Vector trực tiếp trong HTML</h1></header>
+    <main>
+      <section class="card">
+        <h2>Raster vs Vector</h2>
+        <table>
+          <tr>
+            <th>Raster</th>
+            <th>Vector</th>
+          </tr>
+          <tr>
+            <td>Ảnh chụp, pixel</td>
+            <td>Shape/path/toạ độ</td>
+          </tr>
+          <tr>
+            <td>JPG, PNG, WebP, AVIF</td>
+            <td>SVG</td>
+          </tr>
+          <tr>
+            <td>Phóng quá lớn có thể vỡ</td>
+            <td>Phóng lớn vẫn sắc nét</td>
+          </tr>
+        </table>
+      </section>
+      <section class="card">
+        <h2>Inline SVG</h2>
+        <svg
+          viewBox="0 0 200 200"
+          width="180"
+          role="img"
+          aria-labelledby="svg-title"
+        >
+          <title id="svg-title">Biểu tượng trạng thái thành công</title>
+          <circle cx="100" cy="100" r="80" fill="seagreen" />
+          <path
+            d="M55 105 L90 140 L150 65"
+            fill="none"
+            stroke="white"
+            stroke-width="18"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <pre>
+&lt;svg viewBox="0 0 200 200" width="180" role="img" aria-labelledby="svg-title"&gt;
+  &lt;title id="svg-title"&gt;Biểu tượng trạng thái thành công&lt;/title&gt;
+  &lt;circle cx="100" cy="100" r="80" fill="seagreen" /&gt;
+&lt;/svg&gt;</pre
+        >
+        <p>
+          <strong>viewBox:</strong> hệ toạ độ thiết kế. Thử đổi
+          <code>width="50"</code> và <code>width="600"</code>.
+        </p>
+      </section>
+      <section class="card">
+        <h2>SVG như một file ảnh</h2>
+        <img
+          src="../assets/svg/logo.svg"
+          alt="Logo dấu kiểm công nghệ"
+          width="160"
+          height="160"
+        />
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>04 iframe Security</title>
+    <link rel="stylesheet" href="../styles/lab.css" />
+  </head>
+  <body>
+    <header><h1>04 — iframe & Security</h1></header>
+    <main>
+      <section class="card">
+        <h2>Iframe thường</h2>
+        <iframe
+          src="widget.html"
+          title="Widget HTML minh hoạ"
+          width="700"
+          height="260"
+          loading="lazy"
+        ></iframe>
+        <pre>
+&lt;iframe src="widget.html" title="Widget HTML minh hoạ" loading="lazy"&gt;&lt;/iframe&gt;</pre
+        >
+      </section>
+      <section class="card">
+        <h2>Sandbox</h2>
+        <iframe
+          src="widget.html"
+          title="Widget bị sandbox"
+          width="700"
+          height="260"
+          loading="lazy"
+          sandbox
+        ></iframe>
+        <pre>&lt;iframe ... sandbox&gt;&lt;/iframe&gt;</pre>
+        <p class="warn">
+          Thử bấm nút trong hai iframe để thấy khác biệt. Sandbox mặc định hạn
+          chế script và nhiều capability khác.
+        </p>
+        <p>
+          Nguyên tắc:
+          <strong>bắt đầu ít quyền → thiếu gì → cấp thêm đúng quyền đó</strong>.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

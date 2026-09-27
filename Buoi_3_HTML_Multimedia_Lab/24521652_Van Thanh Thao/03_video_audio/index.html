@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>03 Video Audio</title>
+<link rel="stylesheet" href="../styles/lab.css">
+</head>
+<body>
+<header><h1>03 — Video, Audio & Captions</h1></header><main>
+<section class="card"><h2>Video</h2><video controls width="720" poster="../assets/images/poster.jpg" preload="metadata"><source src="../assets/media/demo.mp4" type="video/mp4"><track src="../assets/captions/vi.vtt" kind="captions" srclang="vi" label="Tiếng Việt" default>Trình duyệt không hỗ trợ video.</video><pre>&lt;video controls poster="poster.jpg" preload="metadata"&gt;
+  &lt;source src="demo.mp4" type="video/mp4"&gt;
+  &lt;track src="vi.vtt" kind="captions" srclang="vi" label="Tiếng Việt" default&gt;
+&lt;/video&gt;</pre></section>
+<section class="card"><h2>Audio</h2><audio controls><source src="../assets/media/intro.mp3" type="audio/mpeg">Trình duyệt không hỗ trợ audio.</audio><pre>&lt;audio controls&gt;
+  &lt;source src="intro.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;</pre></section>
+<section class="card"><h2>WebVTT</h2><pre>WEBVTT
+
+00:00:00.000 --&gt; 00:00:03.000
+Xin chào các bạn.</pre><p class="note">Track/captions giúp video không phụ thuộc hoàn toàn vào khả năng nghe âm thanh.</p></section></main>
+</body>
+</html>

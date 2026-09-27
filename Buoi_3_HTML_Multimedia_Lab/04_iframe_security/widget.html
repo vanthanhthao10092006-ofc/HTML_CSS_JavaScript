@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+      body {
+        font-family: system-ui;
+        background: #14213d;
+        color: white;
+        padding: 28px;
+      }
+      button {
+        padding: 10px 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Widget được nhúng</h1>
+    <p>Đây là một tài liệu HTML khác nằm bên trong iframe.</p>
+    <button
+      onclick="
+        document.body.insertAdjacentHTML(
+          'beforeend',
+          '<p>JavaScript trong widget đã chạy.</p>',
+        )
+      "
+    >
+      Chạy JS
+    </button>
+  </body>
+</html>
